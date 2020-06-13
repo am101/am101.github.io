@@ -1,0 +1,65 @@
+:root {
+    --font-color: rgb(4, 0, 255);
+    --font-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--font-color);
+    text-shadow: 0 0 4px var(--font-color);
+    font-family: var(--font-style);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: aqua;
+    text-shadow: 3px 3px 5px aqua;
+}
+
+.container {
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.apple{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: var(--font-style);
+    color: #fff;
+}
+
+#myimage {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 200px;
+    left: 85px;
+}
+
+
+
+
