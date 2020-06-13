@@ -1,6 +1,8 @@
 :root {
-    --font-color: rgb(4, 0, 255);
-    --font-style: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-color: green;
+    --font-style: monospace;
+    --bg-color: black;
+    --font-sizing: 16px;
 }
 
 * {
@@ -9,55 +11,62 @@
     margin: 0;
 }
 
-.navbar {
-    width: 100%;
-    padding: 20px 20px;
-    background-color: rgb(0, 0, 0);
-    z-index: 2;
-}
-
-.navbar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: var(--font-color);
-    text-shadow: 0 0 4px var(--font-color);
-    font-family: var(--font-style);
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-
-.navbar a:hover {
-    color: aqua;
-    text-shadow: 3px 3px 5px aqua;
-}
-
-.container {
-    z-index: -1;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(5, 5, 5, 0.5);
+.main {
     position: absolute;
-    top: 0;
-}
-
-.apple{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 300;
-    font-size: 2rem;
     font-family: var(--font-style);
-    color: #fff;
+    color: var(--font-color);
+    font-size: var(--font-sizing);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color);
 }
 
-#myimage {
+.main p {
     position: relative;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    top: 200px;
-    left: 85px;
+    top: 30px;
+    line-height: 1.5;
+}
+
+.bottom-links a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font-style);
+    color: var(--font-color);
+}
+.bottom-links a:hover {
+    color: white;
+    background-color: green;
+}
+
+.blink {
+    animation: blink 2s infinite ease-in;
+}
+
+.blink2 {
+    animation: blink 1s infinite ease-in;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: var(--font-style);
+    font-size: var(--font-sizing);
+    text-align: center;
+}
+
+@keyframes blink {
+    form {
+        color: green;
+    }
+    to {
+        color: black;
+    }
 }
 
 
