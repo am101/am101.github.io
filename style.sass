@@ -1,0 +1,83 @@
+$font-stack: 'Montserrat', sans-serif
+$title-fonts: 'Trispace', sans-serif
+$primary-color: #c1c2e7
+$secondary-color: #e7e6c1
+$small: 300px
+$medium: 900px
+
+body
+    margin: 0px
+    padding: 0px
+    max-width: 100%
+    overflow-x: hidden
+    font: 100% $font-stack
+    color: $primary-color
+    background: radial-gradient(at bottom right, #c1c2e7 0, #c1c2e7 8px, rgba(193,194,231,0.2) 8px, rgba(193,194,231,0.2) 16px, rgba(193,194,231,0.75) 16px, rgba(193,194,231,0.75) 24px, rgba(193,194,231,0.25) 24px, rgba(193,194,231,0.25) 32px, rgba(193,194,231,0.3) 32px, rgba(193,194,231,0.3) 40px, rgba(193,194,231,0.75) 40px, rgba(193,194,231,0.75) 48px, rgba(193,194,231,0.2) 48px, rgba(193,194,231,0.2) 56px, transparent 56px, transparent 64px), radial-gradient(at top left, transparent 0, transparent 8px, rgba(193,194,231,0.2) 8px, rgba(193,194,231,0.2) 16px, rgba(193,194,231,0.75) 16px, rgba(193,194,231,0.75) 24px, rgba(193,194,231,0.3) 24px, rgba(193,194,231,0.3) 32px, rgba(193,194,231,0.25) 32px, rgba(193,194,231,0.25) 40px, rgba(193,194,231,0.75) 40px, rgba(193,194,231,0.75) 48px, rgba(193,194,231,0.2) 48px, rgba(193,194,231,0.2) 56px, #c1c2e7 56px, #c1c2e7 64px, transparent 64px, transparent 160px)
+    background-blend-mode: multiply
+    background-size: 64px 64px, 64px 64px
+    background-color: #112328
+
+    a
+        color: inherit
+        text-decoration: inherit
+
+    #screen-1
+        height: 100vh
+    #screen-2
+        height: 100vh
+
+    .list-container
+        margin-top: 0px
+        display: flex
+        align-item: center
+        flex-direction: row
+        justify-content: space-between
+
+        .name-text
+            font: 150% $font-stack
+            margin-left: 10px
+
+        .title-list
+            list-style-type: none
+            display: flex
+            flex-direction: row
+            .list
+                font: 150% $font-stack
+                margin: 16px
+
+            .list:hover
+                color: $secondary-color
+                font: 160% $font-stack
+                margin: 14px
+
+    .greet
+        font: 200% $title-fonts
+        margin: 0
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+    .footing
+        font: 100% $font-stack
+        position: relative
+        bottom: 0
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        width: 350px
+
+@media screen and (max-width: $small)
+    .list-container
+        .name-text
+            font: 50% $font-stack
+        .title-list
+            .list
+                font: 50% $font-stack
+
+            .list:hover
+                color: $secondary-color
+                font: 60% $font-stack
+
+@media screen and (min-width: $medium)
